@@ -16,14 +16,14 @@ import org.apache.logging.log4j.Logger;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
 
-@Mod(modid = "pineapleclient", version = PineapleClient.VERSION)
+@Mod(modid = "BillionWare", version = BillionWare.VERSION)
 public class PineapleClient {
 
 	@Mod.Instance
 	private static PineapleClient MASTER;
 
-	public static final String NAME = "PineapleClient";
-	public static final String VERSION = "1.8.1";
+	public static final String NAME = "BillionWare";
+	public static final String VERSION = "1.5.4";
 	public static final String SIGN = " - ";
 
 	public static final int KEY_GUI = Keyboard.KEY_RSHIFT;
@@ -66,7 +66,7 @@ public class PineapleClient {
 
 		send_minecraft_log("initialising guis");
 
-		Display.setTitle("PineapleClient");
+		Display.setTitle("BillionWare 1.5.4");
 		click_gui = new GUI();
 		click_hud = new HUD();
 
@@ -108,7 +108,7 @@ public class PineapleClient {
 	public void init_log(String name) {
 		register_log = LogManager.getLogger(name);
 
-		send_minecraft_log("starting PineapleClient");
+		send_minecraft_log("starting BillionWare")
 	}
 
 	public static void send_minecraft_log(String log) {
