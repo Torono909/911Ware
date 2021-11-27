@@ -10,7 +10,7 @@ public class ClickHUD extends Hack {
 
 		this.name        = "HUD";
 		this.tag         = "HUD";
-		this.description = "gui for pinnables";
+		this.description = "gui for Billionware";
 	}
 
 	Setting frame_view = create("info", "HUDStringsList", "Strings");
@@ -20,7 +20,7 @@ public class ClickHUD extends Hack {
 	Setting strings_b = create("Color B", "HUDStringsColorB", 255, 0, 255);
 	Setting strings_a = create("Alpha", "HUDStringsColorA", 230, 0, 255);
 	Setting compass_scale = create("Compass Scale", "HUDCompassScale", 16, 1, 60);
-	Setting arraylist_mode = create("PineapleArrayList", "HUDArrayList", "Free", combobox("Free", "Top R", "Top L", "Bottom R", "Bottom L"));
+	Setting arraylist_mode = create("BillionWareArrayList", "HUDArrayList", "Free", combobox("Free", "Top R", "Top L", "Bottom R", "Bottom L"));
 	Setting show_all_pots = create("All Potions", "HUDAllPotions", false);
 	Setting max_player_list = create("Max Players", "HUDMaxPlayers", 24, 1, 64);
 
@@ -36,7 +36,7 @@ public class ClickHUD extends Hack {
 				
 			PineapleClient.click_hud.back = false;
 
-			mc.displayGuiScreen(PineapleClient.click_hud);
+			mc.displayGuiScreen(PinapleClient.click_hud);
 		}
 	}
 }
